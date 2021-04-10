@@ -1,0 +1,91 @@
+from tkinter import *
+from timeit import default_timer as timer
+import random
+  
+# passage bank with 10 passages for the user to type
+#Animal Farm
+passage_1 = """Twelve voices were shouting in anger, and they were all alike. 
+No question, now, what had happened to the faces of the pigs. The creatures 
+outside looked from pig to man, and from man to pig, and from pig to man again; 
+but already it was impossible to say which was which."""
+
+#1984
+passage_2 = """For, after all, how do we know that two and two make four? Or 
+that the force of gravity works? Or that the past is unchangeable? If both the 
+past and the external world exist only in the mind, and if the mind itself is 
+controllable – what then?"""
+
+# Pride and Prejudice
+passage_3 = """Vanity and pride are different things, though the words are often
+used synonymously. A person may be proud without being vain. Pride relates more 
+to our opinion of ourselves, vanity to what we would have others think of us."""
+
+# The Great Gatsby
+passage_4 = """I couldn’t forgive him or like him, but I saw that what he had 
+done was, to him, entirely justified. It was all very careless and confused. 
+They were careless people, Tom and Daisy—they smashed up things and creatures 
+and then retreated back into their money or their vast carelessness, or whatever 
+it was that kept them together, and let other people clean up the mess they had 
+made."""
+
+#Fahrenheit 451
+passage_5 = """We cannot tell the precise moment when friendship is formed. As 
+in filling a vessel drop by drop, there is at last a drop which makes it run 
+over; so in a series of kindnesses there is at last one which makes the heart 
+run over."""
+
+# To Kill a Mockingbird
+passage_6 = """Mockingbirds don’t do one thing but make music for us to enjoy. 
+They don’t eat up people’s gardens, don’t nest in corncribs, they don’t do one 
+thing but sing their hearts out for us. That’s why it’s a sin to kill a 
+mockingbird."""
+
+# The Picture of Dorian Gray
+passage_7 = """Those who find ugly meanings in beautiful things are corrupt 
+without being charming. This is a fault. Those who find beautiful meanings in 
+beautiful things are the cultivated. For these there is hope. They are the elect 
+to whom beautiful things mean only Beauty. There is no such thing as a moral or 
+an immoral book. Books are well written, or badly written. That is all."""
+
+# The Catcher in the Rye
+passage_8 = """What really knocks me out is a book that, when you're all done 
+reading it, you wish the author that wrote it was a terrific friend of yours and 
+you could call him up on the phone whenever you felt like it. That doesn't 
+happen much, though."""
+
+# Brave New World
+passage_9 = """Did you ever feel, as though you had something inside you that 
+was only waiting for you to give it a chance to come out? Some sort of extra 
+power that you aren't using - you know, like all the water that goes down the 
+falls instead of through the turbines?""" 
+
+# Frankenstein
+passage_10 = """Learn from me, if not by my precepts, at least by my example, 
+how dangerous is the acquirement of knowledge, and how much happier that man is 
+who believes his native town to be his world, than he who aspires to become 
+greater than his nature will allow."""
+
+passage_bank = [passage_1, passage_2, passage_3, passage_4, passage_5, 
+                passage_6, passage_7, passage_8, passage_9, passage_10]
+
+# displays the passage the user will type
+num = random.randint(0,9)
+display(passage_bank[num])
+
+# start timer when user begins typing
+
+
+# stop timer when user finishes typing the passage (or hits enter)
+
+
+# calculate gross wpm (how fast you type w/ no errors)
+# count number of characters in passage (includes letters, spaces, punctuation)
+# gross wpm = (# of characters / 5) / time elapsed in min (each "word" is 5 characters)
+
+
+# calculate accuracy (# of correct characters / total # of characters)
+# for loop for each word in the given passage
+# intialize a counter to 0
+# check the index with the index of the word typed by user
+# if the word at the index is the same, increase counter by 1
+# else, move to next index
